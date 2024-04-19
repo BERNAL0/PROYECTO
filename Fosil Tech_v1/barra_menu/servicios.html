@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fosil Tech</title>
+        <!-- Logo -->
+        <link rel="shortcut icon" href="./img/logo.png" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <div class="menu-btn">
+            <i class="fa-solid fa-bars fa-2x"></i>
+        </div>
+             <header>
+                <div class="container">
+                    <nav class="nav-main">
+                        <img src="img/computadora.png" alt="Logo" class="nav-logo" />
+                        <ul class="nav-menu">
+                            <li>
+                                <a href="#!">Inicio</a>
+                        
+                            </li>
+                            <li><a href="#!">Accesorios</a></li>
+                            <li><a href="#!">Laptops</a></li>
+                            <li><a href="#!">Servicios</a></li>
+                            <li><a href="#!">Contacto</a></li>
+                        </ul>
+                        <form class="nav-search">
+                            <input type="text" placeholder="Search" autofocus />
+                        </form>
+                    </nav>
+                </div>
+              
+             </header>
+    
+    </head>
+    <body>
+        <div class="contenido">
+  
+            <div class="item-0"></div>
+                
+            <div class="item-1">
+                <div class="container-items">
+                    <div class="item">
+                        <figure>
+                            <img
+                                src="https://webapi3.adata.com/storage/product/331_gallery_bl01.png"
+                                alt="producto"
+                            />
+                        </figure>
+                        <div class="info-product">
+                            <h2>HD720</h2>
+                            <p class="price">$1750</p>
+                            <button>Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img
+                                src="https://webapi3.adata.com/storage/product/ed600_pk_2000x2000_1_bk.png"
+                                alt="producto"
+                            />
+                        </figure>
+                        <div class="info-product">
+                            <h2>CARCASA ED600</h2>
+                            <p class="price">$320</p>
+                            <button>Añadir al carrito</button>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <figure>
+                            <img
+                                src="https://webapi3.adata.com/storage/product/hv300_pk_2000x2000_1tb_rd.png"
+                                alt="producto"
+                            />
+                        </figure>
+                        <div class="info-product">
+                            <h2>SLIM HV300</h2>
+                            <p class="price">$1180</p>
+                            <button>Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img
+                                src="https://webapi3.adata.com/storage/product/536_gallery_01.jpg"
+                                alt="producto"
+                            />
+                        </figure>
+                        <div class="info-product">
+                            <h2>HD710 PRO CAMUFLAJE</h2>
+                            <p class="price">$1300</p>
+                            <button>Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img
+                                src="https://webapi3.adata.com/storage/product/sd620_p_2000x20000_bl_03.png"
+                                alt="producto"
+                            />
+                        </figure>
+                        <div class="info-product">
+                            <h2>SD600Q AZUL</h2>
+                            <p class="price">$950</p>
+                            <button>Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img
+                                src="https://webapi3.adata.com/storage/product/p_su630_240gb.png"
+                                alt="producto"
+                            />
+                        </figure>
+                        <div class="info-product">
+                            <h2>SSD 240 SU650 ADATA</h2>
+                            <p class="price">$20</p>
+                            <button>Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img
+                                src="https://webapi3.adata.com/storage/product/p_su630_480gb.png"
+                                alt="producto"
+                            />
+                        </figure>
+                        <div class="info-product">
+                            <h2>SSD 480 SU630 ADATA</h2>
+                            <p class="price">$750</p>
+                            <button>Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img
+                                src="https://webapi3.adata.com/storage/product/p_su630_960gb.png"
+                                alt="producto"
+                            />
+                        </figure>
+                        <div class="info-product">
+                            <h2>SSD 960 SU630 ADATA</h2>
+                            <p class="price">$20</p>
+                            <button>Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+                
+            <div class="item-2"> </div>
+                
+          </div>
+              
+        <!-- JavaScript -->
+        <script src="js/main.js"></script>
+    </body>
+
+    <script>
+        // Asegurar que el código de JavaScript se ejecute después de que se haya cargado todo el DOM
+        document.addEventListener("DOMContentLoaded", function() {
+            // Seleccionar todos los elementos <li> con submenú
+            var itemsConSubMenu = document.querySelectorAll('li');
+    
+            // Agregar eventos de mouseover y mouseout a cada elemento <li>
+            itemsConSubMenu.forEach(function(item) {
+                item.addEventListener('mouseover', function() {
+                    // Mostrar el submenú al pasar el cursor sobre el elemento
+                    var subMenu = this.querySelector('ul');
+                    if (subMenu) {
+                        subMenu.style.display = 'block';
+                    }
+                });
+    
+                item.addEventListener('mouseout', function() {
+                    // Ocultar el submenú al quitar el cursor del elemento
+                    var subMenu = this.querySelector('ul');
+                    if (subMenu) {
+                        subMenu.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
+
+</html>
